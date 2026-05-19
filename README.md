@@ -1,1 +1,1 @@
-# Will-Howgill.github.io
+# william-howgill.github.io
