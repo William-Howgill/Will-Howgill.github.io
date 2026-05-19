@@ -1,4 +1,5 @@
-/* Global page styling */
+
+/* ------------------ GLOBAL ------------------ */
 body {
     font-family: Arial, Helvetica, sans-serif;
     max-width: 900px;
@@ -6,13 +7,21 @@ body {
     padding: 0 20px;
     line-height: 1.6;
     color: #222;
-    background-color: #ffffff;
+    background-color: #f7f9fc; /* subtle modern background */
 }
 
-/* Headings */
+/* ------------------ MAIN CONTENT CARD ------------------ */
+main {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* ------------------ HEADINGS ------------------ */
 h1 {
     font-size: 2.2em;
-    margin-bottom: 0.2em;
+    margin-bottom: 0.4em;
 }
 
 h2 {
@@ -22,12 +31,12 @@ h2 {
     padding-bottom: 6px;
 }
 
-/* Text */
+/* ------------------ TEXT ------------------ */
 p {
     margin: 0.8em 0;
 }
 
-/* Lists */
+/* ------------------ LISTS ------------------ */
 ul {
     margin: 0.5em 0 1em 1.2em;
 }
@@ -36,17 +45,78 @@ li {
     margin: 0.4em 0;
 }
 
-/* Links */
+/* ------------------ LINKS ------------------ */
 a {
     color: #0056b3;
     text-decoration: none;
+    transition: color 0.2s ease;
 }
 
 a:hover {
+    color: #003d80;
     text-decoration: underline;
 }
 
-/* Footer / disclaimers */
+/* Back button */
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 0.95em;
+}
+
+/* Project links list */
+.links a {
+    display: block;
+    margin-bottom: 6px;
+}
+
+/* ------------------ IMAGE STYLING ------------------ */
+.rocket-img {
+    width: 60%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 25px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Figure + caption */
+figure {
+    text-align: center;
+}
+
+figcaption {
+    margin-top: 8px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* ------------------ TABLE ------------------ */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.95em;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #f0f4f8;
+    font-weight: bold;
+}
+
+/* Alternating row colours */
+tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+/* ------------------ FOOTER ------------------ */
 .footer {
     margin-top: 60px;
     font-size: 0.85em;
@@ -54,42 +124,3 @@ a:hover {
     border-top: 1px solid #eee;
     padding-top: 15px;
 }
-
-.back-link {
-    display: inline-block;
-    margin-bottom: 20px;
-    font-size: 0.95em;
-}
-
-.links a {
-    display: block;
-    margin-bottom: 6px;
-}
-
-
-.rocket-img {
-    width: 60%;
-    max-width: 500px;
-    height: auto;
-    display: block;
-    margin: 20px auto;
-}
-
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-}
-
-th, td {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: center;
-}
-
-th {
-    background-color: #f4f4f4;
-    font-weight: bold;
-}
-
