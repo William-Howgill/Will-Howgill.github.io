@@ -1,50 +1,102 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>William Howgill – F1 Performance Analysis</title>
+    <title>F1 Performance Analysis | William Howgill</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
+<header>
+    <h1>F1 Performance Analysis</h1>
+    <p class="subtitle">Telemetry-Based Aerodynamic Insights (FastF1)</p>
+</header>
+
+<main>
+
 <a href="index.html" class="back-link">← Back</a>
 
-<h1>F1 Performance Analysis (FastF1)</h1>
+<section>
+    <h2>Overview</h2>
+    <p>
+        Analysis of publicly available Formula One telemetry to investigate 
+        speed-dependent performance, aerodynamic sensitivity, and stability trends. 
+        The focus is on extracting trackside-relevant insights from real session data.
+    </p>
+</section>
 
-<p>
-I analyse publicly available Formula One telemetry to investigate 
-speed-dependent performance, stability trends, and aerodynamic sensitivity, 
-with a focus on trackside-relevant interpretation.
-</p>
+<section>
+    <h2>Tools & Approach</h2>
+    <p>
+        Data analysis performed using <strong>Python</strong> and the 
+        <strong>FastF1</strong> library, enabling detailed comparison of speed traces, 
+        throttle application, and cornering behaviour across laps and drivers.
+    </p>
+</section>
 
-<h2>Example Study – High-Speed Corner Sensitivity</h2>
+<section>
+    <h2>Case Study: High-Speed Corner Sensitivity</h2>
 
-<p><strong>Question</strong><br>
-Where does aerodynamic behaviour limit performance at high speed?
-</p>
+    <h3>Engineering Question</h3>
+    <p>
+        Where does aerodynamic behaviour limit vehicle performance at high speed?
+    </p>
 
-<p><strong>Session Context</strong><br>
-FP2 performance runs under stable track conditions.
-</p>
+    <h3>Session Context</h3>
+    <p>
+        Free Practice 2 (FP2) representative performance runs under stable track conditions.
+    </p>
 
-<p><strong>Observations</strong></p>
-<ul>
-    <li>Reduced minimum speeds in fast corners compared to low-speed performance.</li>
-    <li>Earlier throttle lift suggesting reduced aero confidence.</li>
-</ul>
+    <h3>Key Observations</h3>
+    <ul>
+        <li>Reduced minimum speeds in high-speed corners relative to low-speed performance.</li>
+        <li>Earlier throttle lift indicating reduced driver confidence at high speed.</li>
+        <li>Greater variation in corner entry speed compared to slower sections.</li>
+    </ul>
 
-<p><strong>Interpretation</strong><br>
-The behaviour is consistent with speed-dependent aerodynamic sensitivity 
-rather than mechanical grip limitation.
-</p>
+    <h3>Interpretation</h3>
+    <p>
+        The observed behaviour is consistent with aerodynamic sensitivity increasing 
+        with speed, leading to reduced platform stability and driver confidence. 
+        This suggests that limitations are primarily aerodynamic rather than 
+        mechanical grip-related.
+    </p>
 
-<p><strong>Trackside Relevance</strong><br>
-Improving high-speed aero robustness may allow higher minimum speed 
-without compromising stability.
-</p>
+    <h3>Trackside Relevance</h3>
+    <p>
+        Improving high-speed aerodynamic robustness could enable higher minimum 
+        cornering speeds without compromising stability, directly improving lap time 
+        performance.
+    </p>
+</section>
+
+<section>
+    <h2>Engineering Insight</h2>
+    <p>
+        This type of analysis demonstrates how telemetry can be used to infer aerodynamic 
+        behaviour indirectly, supporting performance engineering decisions without direct 
+        flow-field data. It highlights the importance of integrating data analysis with 
+        aerodynamic understanding in a trackside environment.
+    </p>
+</section>
+
+<section>
+    <h2>Notes</h2>
+    <p class="note">
+        This page presents a simplified public summary. Full datasets, processing methods,
+        and detailed analysis workflows are not shown.
+    </p>
+</section>
+
+</main>
+
+<footer class="footer">
+    <p>© 2026 William Howgill | Aerodynamics Portfolio</p>
+</footer>
 
 </body>
 </html>
