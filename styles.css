@@ -66,8 +66,12 @@ a:hover {
     margin-bottom: 6px;
 }
 
+
 .rocket-img {
-    width: 10%;
+    width: 50%;
     max-width: 500px;
-     height: auto;
+    height: auto;
+    display: block;
+    margin: 20px auto;
 }
+
